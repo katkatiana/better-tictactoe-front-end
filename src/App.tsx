@@ -1,5 +1,7 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { CheckName } from './pages/CheckName';
+import { CheckForm } from './pages/CheckForm';
+
 import { Home } from './pages/Home';
 
 export default function App() {
@@ -8,6 +10,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="check-name" element={<CheckName />} />
+          <Route path="check-form" element={<CheckForm />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -24,6 +27,9 @@ function Layout() {
           </li>
           <li>
             <Link to="/check-name">Check Name</Link>
+          </li>
+          <li>
+            <Link to="/check-form">Check Form</Link>
           </li>
         </ul>
       </nav>
