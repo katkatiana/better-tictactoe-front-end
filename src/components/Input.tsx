@@ -1,9 +1,9 @@
 import { InputProps } from "../interfaces/form";
+import "../style/Input.css";
 
-export function Input({ label, name, type = "text", placeholder, value, onChangeFunc, min, max, checked }: InputProps) {
+export function Input({ label, name, type = "text", placeholder, value, onChangeFunc, min, max, checked, inline }: InputProps) {
   return (
-    <div>
-      <label>
+      <label className={`lighter-text-color ${inline ? "input-inline" : "input-block"}`}>
         {label}
         <input
           name={name}
@@ -16,6 +16,5 @@ export function Input({ label, name, type = "text", placeholder, value, onChange
           checked={checked}
         />
       </label>
-    </div>
   );
 }

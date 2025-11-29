@@ -1,0 +1,46 @@
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.check-form {
+    padding: 10px;
+    border: lightgray 1px solid;
+    border-radius: 2%;
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px #dedede;
+}
+
+.validation-error {
+    color: red;
+    font-size: small;
+}
+
+.errors {
+    display: block;
+}
+
+.submit-form-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.radio-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.validation-form-title {
+    margin-block-start: 0;
+    font-weight: 600;
+}
+

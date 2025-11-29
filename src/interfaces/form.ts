@@ -7,7 +7,8 @@ export interface InputProps {
     onChangeFunc: (e: any) => void;
     min?: string;
     max?: string;
-    checked?: boolean
+    checked?: boolean,
+    inline?: boolean;
 }
 
 export interface FormValues {
@@ -15,4 +16,8 @@ export interface FormValues {
     age: number,
     married?: boolean,
     dateOfBirth: string
+}
+
+export interface FormErrors {
+    [key: string]: string[];
 }
