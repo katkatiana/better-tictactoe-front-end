@@ -13,7 +13,7 @@ export interface InputProps {
 
 export interface FormValues {
     username: string,
-    age: number,
+    age: number | string,
     married?: boolean,
     dateOfBirth: string
 }

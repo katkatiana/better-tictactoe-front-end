@@ -23,16 +23,27 @@
     display: block;
 }
 
-.submit-form-btn {
+.btn-section {
     margin-top: 10px;
+}
+
+#submit-form-btn,
+#reset-form-btn {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
     color: white;
     cursor: pointer;
 }
 
+#submit-form-btn {
+    background-color: #4CAF50;
+}
+
+#reset-form-btn {
+    background-color: grey;
+    margin-inline-start: 5px;
+}
 .radio-section {
     display: flex;
     justify-content: space-around;
