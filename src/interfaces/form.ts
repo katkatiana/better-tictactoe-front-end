@@ -14,7 +14,7 @@ export interface InputProps {
 export interface FormValues {
     username: string,
     age: number | string,
-    married?: boolean,
+    married?: boolean | null,
     dateOfBirth: string
 }
 

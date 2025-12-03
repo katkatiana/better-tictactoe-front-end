@@ -1,6 +1,27 @@
 .disabled {
     opacity: 0.5;
-    pointer-events: none;
+}
+
+.input-block,
+.input-inline {
+    display: flex;
+    gap: 5px;
+    margin-block-start: 10px;
+}
+
+.input-block {
+    flex-direction: column;
+}
+
+.input-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.validation-form-title {
+    margin-block-start: 0;
+    font-weight: 600;
 }
 
 .check-form {
@@ -16,15 +37,22 @@
 
 .validation-error {
     color: red;
-    font-size: small;
+    font-size: x-small;
 }
 
 .errors {
     display: block;
 }
 
+.married-label {
+    display: block;
+    margin-block-start: 10px;
+}
+
 .btn-section {
     margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 #submit-form-btn,
@@ -42,16 +70,14 @@
 
 #reset-form-btn {
     background-color: grey;
-    margin-inline-start: 5px;
 }
+
 .radio-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.validation-form-title {
-    margin-block-start: 0;
-    font-weight: 600;
+.success-msg {
+    color: #4CAF50;
 }
-
